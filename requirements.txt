@@ -1,0 +1,32 @@
+# Core NLP dependencies
+spacy
+en-core-web-md
+
+# Transformers + PyTorch
+transformers
+torch
+sentencepiece
+huggingface-hub
+
+# Biomedical / Medical term libraries
+pymedtermino
+PyMedTermino2
+lxml
+rdflib
+
+# Data and utility
+pandas
+numpy
+regex
+tqdm
+
+# JSON, parsing, and safety
+jsonschema
+beautifulsoup4
+
+# For better model downloads on Windows (optional but recommended)
+hf_xet
+
+# Optional performance libraries
+nltk
+scikit-learn
