@@ -563,10 +563,6 @@ def main():
     """
     Main function demonstrating usage with error handling.
     """
-    print("=" * 70)
-    print("SOAP Note Generator - Production Version")
-    print("=" * 70)
-    print()
     
     try:
         # Initialize generator
@@ -599,9 +595,9 @@ def main():
             """
             logger.info("Using example transcript for demonstration")
         
-        print("\n" + "-" * 70)
+        
         print("Generating SOAP note...")
-        print("-" * 70 + "\n")
+        
         
         # Generate SOAP note
         soap_note = generator.generate_soap_note(
@@ -612,14 +608,10 @@ def main():
         )
         
         # Display results
-        print("\n" + "=" * 70)
         print("JSON OUTPUT")
-        print("=" * 70)
         print(json.dumps(soap_note, indent=2))
         
-        print("\n" + "=" * 70)
         print("FORMATTED OUTPUT")
-        print("=" * 70)
         print(generator.format_soap_note(soap_note))
         
         # Save to file
@@ -629,9 +621,7 @@ def main():
             include_formatted=True
         )
         
-        print("\n" + "=" * 70)
         print("✓ SOAP note generation complete!")
-        print("=" * 70)
         
     except Exception as e:
         logger.error(f"Fatal error: {str(e)}")

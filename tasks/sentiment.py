@@ -149,6 +149,6 @@ class HealthcareSentimentAnalyzer:
 # Example usage
 if __name__ == "__main__":
     analyzer = HealthcareSentimentAnalyzer()
-    conversation_file = "data/conversation.txt"
+    conversation_file = "data/conversation_one.txt"
     conversation_result = analyzer.analyze_conversation(conversation_file)
     print(json.dumps(conversation_result, indent=2))
